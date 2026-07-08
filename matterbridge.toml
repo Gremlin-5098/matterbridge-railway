@@ -1,0 +1,19 @@
+[telegram.mytelegram]
+Token="${TELEGRAM_TOKEN}"
+RemoteNickFormat="[{NICK}]: "
+
+[discord.mydiscord]
+Token="${DISCORD_TOKEN}"
+RemoteNickFormat="<{NICK}> "
+
+[[gateway]]
+name="gateway1"
+enable=true
+
+[[gateway.inout]]
+account="telegram.mytelegram"
+channel=-1003914035616
+
+[[gateway.inout]]
+account="discord.mydiscord"
+channel="1498585770548658257"
